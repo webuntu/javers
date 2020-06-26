@@ -6,9 +6,9 @@ class FormSelect extends React.Component {
         const options = [];
         options.push(<option key="" value="">{this.props.placeholder}</option>);
         
-        this.props.options.length && this.props.options.forEach((option) => {
+        this.props.options.length && this.props.options.forEach((option,index) => {
             options.push(
-                <option key={option.value} value={option.name}>{option.name}</option>
+                <option key={index} value={option}>{option}</option>
             );
         });        
         
