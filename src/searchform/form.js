@@ -8,8 +8,8 @@ class SearchForm extends React.Component {
     constructor(props) {
         super(props);
         
-        this.AUTHORS_URL   = '/audit/authors';
-        this.INSTANCES_URL = '/audit/typesundercontrol';
+        this.AUTHORS_URL   = 'http://localhost:8070/suid/audit/authors';
+        this.INSTANCES_URL = 'http://localhost:8070/suid/audit/typesundercontrol';
         
         this.state = {
             initiators: [],
@@ -52,7 +52,6 @@ class SearchForm extends React.Component {
                     />
                     <FormInput label="Объект изменений"  name="instanceId" />
                     <input type="hidden" name="page" value="1" />
-                    <input type="hidden" name="paging" value="1" />
                     <DateRange />
                 </form>
             </React.Fragment>                    

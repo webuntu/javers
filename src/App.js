@@ -9,7 +9,7 @@ class App extends React.Component {
     constructor(props) {
         super(props);
 
-        this.EVENTS_URL            = '/audit/changes';
+        this.EVENTS_URL            = 'http://localhost:8070/suid/audit/changes';
         this.RESULTS_FIRST_REQUEST = 100;
         this.RESULTS_PER_REQUEST   = 100;
 

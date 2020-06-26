@@ -60,7 +60,7 @@ class DateRange extends React.Component {
                         endDate={this.state.toDate}
                         minDate={this.state.fromDate}
                         locale="ru"
-                        dateFormat="yyyy.MM.dd"
+                        dateFormat="dd.MM.yyyy"
                         name="to"
                         placeholderText="Конечная дата"
                         showMonthDropdown
