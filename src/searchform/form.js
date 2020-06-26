@@ -8,8 +8,8 @@ class SearchForm extends React.Component {
     constructor(props) {
         super(props);
         
-        this.AUTHORS_URL   = 'http://react.webuntu/index.php?request=initiators';
-        this.INSTANCES_URL = 'http://react.webuntu/index.php?request=objects';
+        this.AUTHORS_URL   = '/audit/authors';
+        this.INSTANCES_URL = '/audit/typesundercontrol';
         
         this.state = {
             initiators: [],

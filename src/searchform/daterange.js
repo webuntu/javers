@@ -27,7 +27,6 @@ class DateRange extends React.Component {
     handleEndDateChange(value) {
         this.setState({toDate: value});
     }
-//                        dateFormat="dd.MM.yyyy"
     
     render() {
         return (
@@ -42,7 +41,7 @@ class DateRange extends React.Component {
                         startDate={this.state.fromDate}
                         endDate={this.state.toDate}
                         locale="ru"
-                        dateFormat="yyyy.MM.dd"
+                        dateFormat="dd.MM.yyyy"
                         name="from"
                         placeholderText="Начальная дата"
                         showMonthDropdown
